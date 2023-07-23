@@ -23,7 +23,7 @@ conda create -n your_env python=3.9
 
 4. Activate the virtual environment:
 ```
-    conda activate your_env
+conda activate your_env
 ```
 
 5. Install Requirements (in this exact order)
