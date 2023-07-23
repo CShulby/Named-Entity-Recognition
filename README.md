@@ -19,26 +19,26 @@ bash
 
 cd Project_NER
 ```
+
 3. Create a virtual environment (optional but recommended):
 ```
 bash
 
 conda create -n your_env python=3.9
 ```
+
 4. Activate the virtual environment:
 ```
 bash
 
     conda activate your_env
-
-    Install the required dependencies:
 ```
 
 5. Install Requirements (in this exact order)
 ```    
 bash
 
-pip install -r requirements.txt
+pip install -r requirements.txt;
 python -m spacy download en_core_web_sm
 ```
 ## Usage
