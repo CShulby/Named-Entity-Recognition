@@ -64,18 +64,31 @@ The first time you use it, the script should download the RoBERTa model which ma
 ## Future Work
 
 -Develop SLAs and contracts for a future service (This may alter the rest of the list)
+
 -Develop testing and training sets
+
 -Create .json dumps for larger corpora
+
 -Use a third party for visualization and queries like GraphQL
+
 -Include parallelization on inference
+
 -Implement a more efficient RE classifier like a CRF trained on data annotated the LLM
+
 -Fine-tune (probably optimizing for recall)
+
 -Implement more robust sentence segmentation, tokenization, normalization and PoS tagging
+
 -For normalization, abbreviations are a top priority
+
 -Spellcheckers, Internet slang, etc.
+
 -More robust truecasing (the simple truecaser implemented from scratch here already showed superior results BERT and other LLMs are generally case sensitive)
+
 -Text Cleaning (non-words, foreign-words, ASCII Art, trash tokens)
+
 -Implement a more robust way to deal with long dependencies and rare-words (the Bane of all LMs hehe)
+
 -Dealing with Multiple, Ambiguous or Fuzzy entity classes
     
 
