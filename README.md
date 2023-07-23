@@ -2,7 +2,7 @@
 
 This package contains scripts for Named Entity Recognition (NER), Relation Extraction (RE) and Knowledge Graph Generation using spaCy, RoBERTa and NetworkX, respectively.
 
-The graph is displayed via Matplotlib. Entities of the same type are displayed on each node with the same color, the colors for each entity type are chosen at random with each run. Realtion Scores are displayed as a simple euclidean distance derived from the LLM.
+The graph is displayed via Matplotlib. Entities of the same type are displayed on each node with the same color, the colors for each entity type are chosen at random with each run. Relation Scores are displayed as a simple euclidean distance derived from the LLM.
 
 ## Installation
 
