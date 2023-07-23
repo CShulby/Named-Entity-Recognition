@@ -8,7 +8,8 @@ The graph is displayed via Matplotlib. Entities of the same type are displayed o
 
 1. Clone the repository to your local machine:
 
-```bash
+```
+bash
 git clone https://github.com/CShulby/Project_NER.git
 ```
 2. Change to the repository directory:
@@ -41,11 +42,11 @@ python -m spacy download en_core_web_sm
 ```
 ## Usage
 
-    Place your input text corpus in a file (e.g., input_corpus.txt) in the root directory of the repository.
+Place your input text corpus in a file (e.g., input_corpus.txt) in the root directory of the repository.
 
-    Create a gazetteer file (e.g., gazetteer.txt) containing known named entities along with their types. Each line in the gazetteer file should have the tab-delimited format: entity    type    POS (e.g., Leicestershire GPE PNOUN). *Note that the PoS information from the gazatteer is not currently being used, but would be useful if rules were implemented and I have left it for now at the risk of having more information, rather than less. It may be changed it the future.
+Create a gazetteer file (e.g., gazetteer.txt) containing known named entities along with their types. Each line in the gazetteer file should have the tab-delimited format: entity    type    POS (e.g., Leicestershire GPE PNOUN). *Note that the PoS information from the gazatteer is not currently being used, but would be useful if rules were implemented and I have left it for now at the risk of having more information, rather than less. It may be changed it the future.
 
-    Run the main script:
+Run the main script:
 ```
 bash
 
@@ -58,34 +59,34 @@ The script will perform Named Entity Recognition on the input corpus using spaCy
 
 The first time you use it it will download the RoBERTa model which may take a couple of minutes
 
-Notes
+## Notes
 
-    -The NER model is based on spaCy's en_core_web_sm model, which may be updated or changed in the future. Make sure you have the appropriate spaCy model installed.
+-The NER model is based on spaCy's en_core_web_sm model, which may be updated or changed in the future. Make sure you have the appropriate spaCy model installed.
 
-    -The RoBERTa model used in the relation extraction is based on roberta-base from the transformers library. You can change the model if needed.
+-The RoBERTa model used in the relation extraction is based on roberta-base from the transformers library. You can change the model if needed.
 
-    -The relation extraction function uses cosine similarity to calculate relation scores. This could be changed in the future depending on specific ontologies or requirements.
+-The relation extraction function uses cosine similarity to calculate relation scores. This could be changed in the future depending on specific ontologies or requirements.
 
-    -The generated knowledge graph will be displayed using Matplotlib. You can save the plot or modify the visualization as needed.
+-The generated knowledge graph will be displayed using Matplotlib. You can save the plot or modify the visualization as needed.
     
-    -The BERT model is not super efficient (A pretrained LLM was chosen due to time constraints for development). 
+-The BERT model is not super efficient (A pretrained LLM was chosen due to time constraints for development). 
     I recommend processing one phrase at a time with this library until some of the future work is completed.
     
-Future Work
+## Future Work
 
-    -Develop SLAs and contracts for a future service (This may alter the rest of the list)
-    -Develop testing and training sets
-    -Create .json dumps for larger corpora
-    -Use a third party for visualization and queries like GraphQL
-    -Include parallelization on inference
-    -Implement a more efficient RE classifier like a CRF trained on data annotated the LLM
-    -Fine-tune (probably optimizing for recall)
-    -Implement more robust sentence segmentation, tokenization, normalization and PoS tagging
-    -For normalization, abbreviations are a top priority
-    -Spellcheckers, Internet slang, etc.
-    -More robust truecasing (the simple truecaser implemented from scratch here already showed superior results BERT and other LLMs are generally case sensitive)
-    -Text Cleaning (non-words, foreign-words, ASCII Art, trash tokens)
-    -Implement a more robust way to deal with long dependencies and rare-words (the Bane of all LMs hehe)
-    -Dealing with Multiple, Ambiguous or Fuzzy entity classes
+-Develop SLAs and contracts for a future service (This may alter the rest of the list)
+-Develop testing and training sets
+-Create .json dumps for larger corpora
+-Use a third party for visualization and queries like GraphQL
+-Include parallelization on inference
+-Implement a more efficient RE classifier like a CRF trained on data annotated the LLM
+-Fine-tune (probably optimizing for recall)
+-Implement more robust sentence segmentation, tokenization, normalization and PoS tagging
+-For normalization, abbreviations are a top priority
+-Spellcheckers, Internet slang, etc.
+-More robust truecasing (the simple truecaser implemented from scratch here already showed superior results BERT and other LLMs are generally case sensitive)
+-Text Cleaning (non-words, foreign-words, ASCII Art, trash tokens)
+-Implement a more robust way to deal with long dependencies and rare-words (the Bane of all LMs hehe)
+-Dealing with Multiple, Ambiguous or Fuzzy entity classes
     
 
