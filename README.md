@@ -10,6 +10,7 @@ The graph is displayed via Matplotlib. Entities of the same type are displayed o
 
 ```
 bash
+
 git clone https://github.com/CShulby/Project_NER.git
 ```
 2. Change to the repository directory:
