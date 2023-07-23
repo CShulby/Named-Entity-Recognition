@@ -9,35 +9,25 @@ The graph is displayed via Matplotlib. Entities of the same type are displayed o
 1. Clone the repository to your local machine:
 
 ```
-bash
-
 git clone https://github.com/CShulby/Project_NER.git
 ```
 2. Change to the repository directory:
 ```
-bash
-
 cd Project_NER
 ```
 
 3. Create a virtual environment (optional but recommended):
 ```
-bash
-
 conda create -n your_env python=3.9
 ```
 
 4. Activate the virtual environment:
 ```
-bash
-
     conda activate your_env
 ```
 
 5. Install Requirements (in this exact order)
 ```    
-bash
-
 pip install -r requirements.txt;
 python -m spacy download en_core_web_sm
 ```
@@ -49,8 +39,6 @@ Create a gazetteer file (e.g., gazetteer.txt) containing known named entities al
 
 Run the main script:
 ```
-bash
-
 python main.py --corpus input_corpus.txt (--gazetteer gazetteer.txt)
 ```
 
