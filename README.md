@@ -46,7 +46,7 @@ python main.py --corpus input_corpus.txt (--gazetteer gazetteer.txt)
 
 The script will perform Named Entity Recognition on the input corpus using spaCy, extract relations between entities using RoBERTa, generate a knowledge graph, and visualize it using NetworkX and Matplotlib.
 
-The first time you use it it will download the RoBERTa model which may take a couple of minutes
+The first time you use it, the script should download the RoBERTa model which may take a couple of minutes
 
 ## Notes
 
